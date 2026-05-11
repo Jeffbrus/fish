@@ -97,7 +97,7 @@ const SITE_DATA = {
       num: "02",
       dayBadge: "Saturday · Day 2",
       name: "Monterra Golf",
-      location: "Clarksburg, ON",
+      location: "Blue Mountain, ON",
       par: "71",
       yards: "6,602",
       format: "Best Ball",
@@ -124,14 +124,15 @@ const SITE_DATA = {
   /* ── Chalet Info ── */
   chalet: {
     name: "Fish Headquarters",
-    address: "14 Blue Shores Lane, Collingwood, ON L9Y 0X4",
-    sleeps: "16 players",
+    address: "140 Birch Trail, Blue Mountains, ON L9Y 0M2",
+    sleeps: "16 players - 10 Beds",
     checkin: "Friday, May 22 · 11:00 AM",
     checkout: "Sunday, May 24 · 10:20 AM",
     cost: "$167.00 Per Person",
     wifi: "TBD / password: TBD",
+    extras: "Hot-Tub, BBQ, Fire pitt",
     parking: "Driveway fits 6-8 vehicles — carpool where possible",
-    contact: "Book issues? Call Jeff @ 226-974-2787",
+    contact: "Issues? Call Jeff @ 226-974-2787",
     rules: [
       { icon: "🚭", text: "No smoking indoors — use the back deck." },
       { icon: "🍺", text: "BYOB — fridge space is first come, first served." },
@@ -148,17 +149,7 @@ const SITE_DATA = {
     {
       icon: "🏆",
       title: "Tournament Format",
-      body: "Three rounds, three formats: scramble, best ball, and individual stroke play. Individual points awarded each day. Overall Fish Cup winner crowned Sunday.",
-    },
-    {
-      icon: "💰",
-      title: "Prizes",
-      body: "Fish Cup champion, daily closest-to-the-pin, longest drive (each day), and the coveted Golden Wedge for worst score of the weekend.",
-    },
-    {
-      icon: "🚗",
-      title: "Getting There",
-      body: "Collingwood is ~1.5 hrs north of Toronto via Hwy 400 N. Coordinate carpools in the group chat — parking is limited at the chalet.",
+      body: "Three rounds, three formats: individual stroke play, best ball, and individual stroke play. Individual points awarded each day. Overall Fish Cup winner crowned Sunday.",
     },
     {
       icon: "👕",
@@ -327,6 +318,10 @@ function buildChalet() {
       <div class="chalet__detail-row">
         <span class="chalet__detail-label">WiFi</span>
         <span class="chalet__detail-value">${c.wifi}</span>
+      </div>
+      <div class="chalet__detail-row">
+        <span class="chalet__detail-label">Extras</span>
+        <span class="chalet__detail-value">${c.extras}</span>
       </div>
       <div class="chalet__detail-row">
         <span class="chalet__detail-label">Parking</span>
