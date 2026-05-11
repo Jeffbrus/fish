@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fish | Golf Classic 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">
+        <img src="https://i.imgur.com/placeholder.png" alt="Fish Logo" class="nav__logo-img" id="fishLogo" />
+        <span class="nav__logo-text">THE FISH</span>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#chalet">Chalet</a></li>
+        <li><a href="#payments">Payments</a></li>
+        <li><a href="#info">Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Fish Hockey — Off-Season Classic</p>
+      <h1 class="hero__title">Golf<br /><em>Tournament</em><br />2025</h1>
+      <div class="hero__meta">
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Dates</span>
+          <span class="hero__meta-value">May 22–24</span>
+        </div>
+        <div class="hero__meta-divider"></div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Location</span>
+          <span class="hero__meta-value">Collingwood, ON</span>
+        </div>
+        <div class="hero__meta-divider"></div>
+        <div class="hero__meta-item">
+          <span class="hero__meta-label">Rounds</span>
+          <span class="hero__meta-value">3 Courses · 3 Days</span>
+        </div>
+      </div>
+      <a href="#schedule" class="btn btn--gold">View Schedule</a>
+    </div>
+    <div class="hero__fish-emblem">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero__fish-svg">
+        <!-- Stylized marlin / fish silhouette -->
+        <ellipse cx="100" cy="110" rx="70" ry="38" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity="0.3"/>
+        <ellipse cx="100" cy="110" rx="50" ry="26" fill="none" stroke="var(--teal)" stroke-width="1" opacity="0.4"/>
+        <!-- Body -->
+        <path d="M30 110 Q60 75 120 95 Q160 105 180 110 Q160 120 120 125 Q60 145 30 110Z" fill="var(--teal)" opacity="0.18"/>
+        <path d="M30 110 Q60 75 120 95 Q160 105 180 110 Q160 120 120 125 Q60 145 30 110Z" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"/>
+        <!-- Tail -->
+        <path d="M30 110 L10 90 L5 110 L10 130 Z" fill="var(--gold)" opacity="0.4"/>
+        <!-- Dorsal fin -->
+        <path d="M90 95 Q110 60 140 80 Q120 92 100 95Z" fill="var(--teal)" opacity="0.35"/>
+        <!-- Bill -->
+        <path d="M180 110 L210 108 L180 112Z" fill="var(--gold)" opacity="0.5"/>
+        <!-- Eye -->
+        <circle cx="162" cy="108" r="4" fill="var(--gold)" opacity="0.8"/>
+        <circle cx="162" cy="108" r="2" fill="var(--black)"/>
+        <!-- Scales lines -->
+        <path d="M80 100 Q90 95 100 100" fill="none" stroke="var(--gold)" stroke-width="0.8" opacity="0.4"/>
+        <path d="M100 100 Q110 95 120 100" fill="none" stroke="var(--gold)" stroke-width="0.8" opacity="0.4"/>
+        <path d="M120 100 Q130 96 140 101" fill="none" stroke="var(--gold)" stroke-width="0.8" opacity="0.4"/>
+        <!-- FISH text arc -->
+        <text x="100" y="170" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="22" fill="var(--gold)" opacity="0.9" letter-spacing="6">FISH</text>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ── PAYMENT ALERT BANNER ── -->
+  <section class="payment-alert" id="payments">
+    <div class="container">
+      <div class="payment-alert__header">
+        <span class="payment-alert__icon">⚠</span>
+        <h2 class="payment-alert__title">Outstanding Payments</h2>
+        <span class="payment-alert__icon">⚠</span>
+      </div>
+      <p class="payment-alert__sub">If your name is below, your payment is still needed. Please settle up before May 20 to secure your spot.</p>
+      <div class="payment-alert__grid" id="paymentGrid">
+        <!-- Populated via JS -->
+      </div>
+      <div class="payment-alert__cta">
+        <p>E-Transfer to: <strong>fishgolfclassic@gmail.com</strong> · Amount: <strong>$250 per player</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCHEDULE ── -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <div class="section__label">Weekend Schedule</div>
+      <h2 class="section__title">Three Days.<br />Three Courses.</h2>
+      <div class="schedule__grid" id="scheduleGrid">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COURSES ── -->
+  <section class="section section--dark" id="courses">
+    <div class="container">
+      <div class="section__label">Course Guide</div>
+      <h2 class="section__title">The Tracks</h2>
+      <div class="courses__grid" id="coursesGrid">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHALET ── -->
+  <section class="section" id="chalet">
+    <div class="container">
+      <div class="section__label">Accommodation</div>
+      <h2 class="section__title">Chalet Info</h2>
+      <div class="chalet__layout">
+        <div class="chalet__card" id="chaletCard">
+          <!-- Populated via JS -->
+        </div>
+        <div class="chalet__rules" id="chaletRules">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INFO ── -->
+  <section class="section section--dark" id="info">
+    <div class="container">
+      <div class="section__label">Need to Know</div>
+      <h2 class="section__title">Tournament Info</h2>
+      <div class="info__grid" id="infoGrid">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__team">THE FISH — GOLF CLASSIC 2025</p>
+      <p class="footer__sub">Collingwood, Ontario · May 22–24, 2025</p>
+      <p class="footer__copy">Go Fish. 🐟</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
