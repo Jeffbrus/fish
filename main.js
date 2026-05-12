@@ -88,7 +88,7 @@ const SITE_DATA = {
       location: "Collingwood, ON",
       cost: "$136.73 per person",
       par: "72",
-      yards: "6,841",
+      yards: "6,557",
       format: "Stroke Play",
       holes: "18 Holes",
       website: "https://www.golfcranberry.com/golf",
