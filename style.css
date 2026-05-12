@@ -803,12 +803,12 @@ td {
 
 .styled-table tr:nth-child(even) {
   background-color: #003f3b;
-  color: #0a0d0f;
+  color: #ccc;
 }
 
 .styled-table tr:hover {
-  background-color: #00b8a9;
-  color: #0a0d0f;
+  background-color: #003f3b;
+  color: #ccc;
 }
 
 
