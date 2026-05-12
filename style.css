@@ -779,12 +779,10 @@ td {
   white-space: nowrap;  /* prevents wrapping so width follows content */
 }
 
-
 .styled-table {
   table-layout: auto;
   width: auto;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
 }
 
 .styled-table th,
