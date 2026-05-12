@@ -13,7 +13,6 @@ const SITE_DATA = {
 
   /* ── Players who still owe money ── */
   outstanding_payments: [
-    "Browner - $80.00",
     "Patty - $186.45"
     // Add or remove names as payments come in
   ],
@@ -139,8 +138,8 @@ const SITE_DATA = {
     contact: "Issues? Call Jeff @ 226-974-2787",
     rules: [
       { icon: "🚭", text: "No smoking indoors — use the back deck." },
-      { icon: "🍺", text: "BYOB — fridge space is first come, first served." },
-      { icon: "🛏️", text: "If you paid you should get a bed." },
+      { icon: "🍺", text: "BYOB cans only — fridge space is first come, first served." },
+      { icon: "🛏️", text: "If you paid you should get a bed. Bring extra towels in case they don't have enough." },
       { icon: "🧹", text: "Everyone cleans up after themselves. Dishes done before check-out." },
       { icon: "🔊", text: "Quiet hours: Collingwood has a no noise bylaw. Limited outdoor noise." },
       { icon: "🏌️", text: "Clubs and bags stay in the vehicle or inside — not the living room." },
@@ -173,7 +172,7 @@ const SITE_DATA = {
     {
       icon: "🍔",
       title: "Food & Drink",
-      body: "Breakfast at the chalet each morning. Lunches at course clubhouses (not included). Saturday BBQ dinner is possible if everyone wants.",
+      body: "BYOB - Cans only. Bring any snacks for the chalet you want. We will go out for dinners and breakfasts or order doordash. Lunches at course clubhouses (not included). Saturday BBQ dinner is possible if everyone wants.",
     },
     {
       icon: "🏥",
