@@ -767,32 +767,48 @@ ul { list-style: none; }
   gap: 1.25rem;
 }
 
+table {
+  table-layout: auto;   /* default, but good to state explicitly */
+  width: auto;          /* or fit-content if appropriate */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  white-space: nowrap;  /* prevents wrapping so width follows content */
+}
+
 
 .styled-table {
-  width: 100%;
+  table-layout: auto;
+  width: auto;
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  font-size: 14px;
 }
 
 .styled-table th,
 .styled-table td {
-  border: 1px solid #ddd;
-  padding: 10px 12px;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .styled-table th {
-  background-color: #f4f4f4;
+  background-color: #00b8a9;
+  color: #0a0d0f;
   font-weight: bold;
 }
 
 .styled-table tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #003f3b;
+  color: #0a0d0f;
 }
 
 .styled-table tr:hover {
-  background-color: #f1f1f1;
+  background-color: #00b8a9;
+  color: #0a0d0f;
 }
 
 
