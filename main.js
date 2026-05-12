@@ -38,7 +38,7 @@ const SITE_DATA = {
         { time: "2:30 PM",  desc: "1st Group — Individual Stroke Play" },
         { time: "2:40 PM",  desc: "2nd Group — Individual Stroke Play" },
         { time: "2:50 PM",  desc: "3rd Group — Individual Stroke Play" },
-        { time: "7:00 PM",  desc: "Drinks & dinner at chalet" },
+        { time: "7:00 PM",  desc: "Drinks & dinner" },
         { time: "8:00 PM",  desc: "Whatever we want to do..." },
       ],
     },
@@ -50,7 +50,8 @@ const SITE_DATA = {
       tag: "Day 2 · Scramble",
       events: [
         { time: "9:30 AM",  desc: "Breakfast" },
-        { time: "10:30 AM", desc: "1st Group — 4-man Scramble" },
+        { time: "10:20 AM",  desc: "Check-in at pro shop" },
+        { time: "10:40 AM", desc: "1st Group — 4-man Scramble" },
         { time: "11:10 AM", desc: "2nd Group — 4-man Scramble" },
         { time: "11:20 AM", desc: "3rd Group — 4-man Scramble" },
         { time: "11:30 AM", desc: "4th Group — 4-man Scramble" },
@@ -66,7 +67,7 @@ const SITE_DATA = {
       tag: "Day 3 · Individual Stroke Play",
       events: [
         { time: "9:30 AM",  desc: "Breakfast" },
-        { time: "10:20 AM",  desc: "Chalet cleanup" },
+        { time: "10:10 AM",  desc: "Chalet cleanup" },
         { time: "11:20 AM", desc: "Checkout of Chalet" },
         { time: "11:50 AM", desc: "Check-in at Lora Bay" },
         { time: "12:10 PM", desc: "Warm-up on the range" },
@@ -85,11 +86,12 @@ const SITE_DATA = {
       dayBadge: "Friday · Day 1",
       name: "Cranberry Golf Resort",
       location: "Collingwood, ON",
+      cost: "$136.73 per person",
       par: "72",
       yards: "6,841",
       format: "Stroke Play",
       holes: "18 Holes",
-      website: "https://www.cranberrygolfresort.com",
+      website: "https://www.golfcranberry.com/golf",
       notes:
         "A links-style layout with sweeping views of Georgian Bay. Watch out for the 14th — the wind comes off the water and will eat your ball alive. Cart path only after rain.",
     },
@@ -98,8 +100,9 @@ const SITE_DATA = {
       dayBadge: "Saturday · Day 2",
       name: "Monterra Golf",
       location: "Blue Mountain, ON",
-      par: "71",
-      yards: "6,602",
+      cost: "$163.85 per person",
+      par: "72",
+      yards: "6,541",
       format: "Best Ball",
       holes: "18 Holes",
       website: "https://www.bluemountain.ca/golf",
@@ -111,6 +114,7 @@ const SITE_DATA = {
       dayBadge: "Sunday · Day 3",
       name: "Lora Bay Golf",
       location: "Thornbury, ON",
+      cost: "$186.45 per person (Prepaid)",
       par: "72",
       yards: "7,006",
       format: "Individual Stroke",
@@ -154,7 +158,7 @@ const SITE_DATA = {
     {
       icon: "👕",
       title: "Dress Code",
-      body: "Collared shirts required at all three courses. No denim, no cargo shorts.",
+      body: "Collared shirts required at all three courses. No denim, no cargo shorts. Check course policies on their website for details.",
     },
     {
       icon: "⛅",
@@ -263,6 +267,10 @@ function buildCourses() {
         <div class="course-card__name">${c.name}</div>
         <div class="course-card__location">📍 ${c.location}</div>
         <div class="course-card__details">
+          <div class="course-detail">
+            <span class="course-detail__label">Cost</span>
+            <span class="course-detail__value">${c.cost}</span>
+          </div>
           <div class="course-detail">
             <span class="course-detail__label">Par</span>
             <span class="course-detail__value">${c.par}</span>
