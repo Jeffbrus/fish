@@ -759,6 +759,45 @@ ul { list-style: none; }
 }
 
 /* ─────────────────────────────────────────
+   PLAYERS
+───────────────────────────────────────── */
+.players__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.styled-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+/* ─────────────────────────────────────────
    FOOTER
 ───────────────────────────────────────── */
 .footer {
