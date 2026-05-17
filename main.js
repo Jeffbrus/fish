@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────
-   THE FISH — GOLF CLASSIC 2025
+   THE FISH — GOLF CLASSIC 2026
    main.js
 ───────────────────────────────────────── */
 
@@ -84,7 +84,7 @@ const SITE_DATA = {
       dayBadge: "Friday · Day 1",
       name: "Cranberry Golf Resort",
       location: "Collingwood, ON",
-      cost: "$136.73 per person",
+      cost: "$136.73 pp (Pay at course)",
       par: "72",
       yards: "6,557",
       format: "Stroke Play",
@@ -98,10 +98,10 @@ const SITE_DATA = {
       dayBadge: "Saturday · Day 2",
       name: "Monterra Golf",
       location: "Blue Mountain, ON",
-      cost: "$163.85 per person",
+      cost: "$163.85 pp (Pay at course)",
       par: "72",
       yards: "6,541",
-      format: "Best Ball",
+      format: "Scramble",
       holes: "18 Holes",
       website: "https://www.bluemountain.ca/golf",
       notes:
@@ -115,7 +115,7 @@ const SITE_DATA = {
       cost: "$186.45 per person (Prepaid)",
       par: "72",
       yards: "7,006",
-      format: "Individual Stroke",
+      format: "TBD",
       holes: "18 Holes",
       website: "https://www.lorabaygolf.com/",
       notes:
