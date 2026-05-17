@@ -13,7 +13,6 @@ const SITE_DATA = {
 
   /* ── Players who still owe money ── */
   outstanding_payments: [
-    "Patty - $186.45"
     // Add or remove names as payments come in
   ],
 
@@ -49,8 +48,8 @@ const SITE_DATA = {
       tag: "Day 2 · Scramble",
       events: [
         { time: "9:30 AM",  desc: "Breakfast" },
-        { time: "10:20 AM",  desc: "Check-in at pro shop" },
-        { time: "10:40 AM", desc: "1st Group — 4-man Scramble" },
+        { time: "10:30 AM",  desc: "Check-in at pro shop" },
+        { time: "11:00 AM", desc: "1st Group — 4-man Scramble" },
         { time: "11:10 AM", desc: "2nd Group — 4-man Scramble" },
         { time: "11:20 AM", desc: "3rd Group — 4-man Scramble" },
         { time: "11:30 AM", desc: "4th Group — 4-man Scramble" },
@@ -152,7 +151,7 @@ const SITE_DATA = {
     {
       icon: "🏆",
       title: "Tournament Format",
-      body: "Three rounds, three formats: individual stroke play, best ball, and individual stroke play. Individual points awarded each day. Overall Fish Cup winner crowned Sunday.",
+      body: "Three rounds, first round is stroke play, best scores become captains and pick teams Friday night. Saturday and Sunday rounds to be determined. Overall Fish Cup winner crowned Sunday.",
     },
     {
       icon: "👕",
@@ -162,12 +161,12 @@ const SITE_DATA = {
     {
       icon: "⛅",
       title: "Weather",
-      body: "Collingwood in May averages 15–20°C. Bring a light jacket for early morning rounds and rain gear — May can be unpredictable. Check the 7-day closer to the weekend.",
+      body: "Blue Mountains forecast could be between 9–18°C. Bring a light jacket for morning rounds and rain gear — May can be unpredictable. Check the forecast closer to the weekend.",
     },
     {
       icon: "📱",
       title: "Group Chat",
-      body: "All coordination happens in the team chat 'Fish Golf Tourney 2026'. Not in the chat? Text Jeff @ 226-974-2787 to get added.",
+      body: "All coordination happens in the team chat '2026 Fish Golf Tourney'. Not in the chat? Text Jeff @ 226-974-2787 to get added.",
     },
     {
       icon: "🍔",
