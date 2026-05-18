@@ -33,9 +33,10 @@ const SITE_DATA = {
       events: [
         { time: "12:00 PM", desc: "Arrive & check in at chalet" },
         { time: "1:45 PM",  desc: "Warm-up on the range" },
-        { time: "2:30 PM",  desc: "1st Group — Individual Stroke Play" },
-        { time: "2:40 PM",  desc: "2nd Group — Individual Stroke Play" },
-        { time: "2:50 PM",  desc: "3rd Group — Individual Stroke Play" },
+        { time: "2:10 PM",  desc: "1st Group — Individual Stroke Play (Added)" },
+        { time: "2:30 PM",  desc: "2nd Group — Individual Stroke Play" },
+        { time: "2:40 PM",  desc: "3rd Group — Individual Stroke Play" },
+        { time: "2:50 PM",  desc: "4th Group — Individual Stroke Play" },
         { time: "7:00 PM",  desc: "Drinks & dinner" },
         { time: "8:00 PM",  desc: "Whatever we want to do..." },
       ],
