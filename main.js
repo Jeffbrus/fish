@@ -37,8 +37,8 @@ const SITE_DATA = {
         { time: "2:30 PM",  desc: "2nd Group — Individual Stroke Play" },
         { time: "2:40 PM",  desc: "3rd Group — Individual Stroke Play" },
         { time: "2:50 PM",  desc: "4th Group — Individual Stroke Play" },
-        { time: "7:00 PM",  desc: "Drinks & dinner" },
-        { time: "8:00 PM",  desc: "Whatever we want to do..." },
+        { time: "8:15 PM",  desc: "Reservation at Rusty's. Draft Dinner" },
+        { time: "9:20 PM",  desc: "Whatever we want to do..." },
       ],
     },
     {
